@@ -2,14 +2,12 @@
 # Ignore the line above
 
 
-#region vCard downloads
-#region Example
 function edg_vcard_dls_example() {
 	$post_id = $_POST[ 'id' ];
 	$post = get_post( $post_id );
 
 	if ( ! $post ) return;
-	
+
 	$upload_dir = wp_upload_dir();
 	$base_dir = $upload_dir[ 'basedir' ];
 	$base_url = $upload_dir[ 'baseurl' ];
@@ -38,7 +36,7 @@ function edg_vcard_dls_example() {
 	if ( file_exists( $profile_picture_path ) && ! empty( $profile_picture ) ) {
 		$profile_picture = base64_encode( file_get_contents( $profile_picture ) );
 	} else {
-		$profile_picture = base64_encode( file_get_contents( wp_get_attachment_image_url( 1 ) ) );
+		$profile_picture = base64_encode( file_get_contents( wp_get_attachment_image_url( 9667 ) ) );
 	}
 
 	$birthdate_res = date_create( $birthdate );
@@ -47,12 +45,11 @@ function edg_vcard_dls_example() {
 	if ( ! $birthdate_res ) {
 		$birthdate_uts = intval( $birthdate );
 
-		if ( $birthdate_uts > 0 ) {
-			$birthdate_res = date_create( "@{$birthdate_uts}" );
-		}
+		if ( ! ( $birthdate_uts > 0 ) || $birthdate_uts == false ) return;
+		$birthdate_res = date_create( "@{$birthdate_uts}" );
 	}
 
-	if ( ! $birthdate || ! date_create( $birthdate ) || $birthdate_res > $today ) {
+	if ( ! $birthdate || ! $birthdate_res || $birthdate_res > $today ) {
 		$birthdate_res = '';
 	} else {
 		$birthdate_res = $birthdate_res->format( 'Y-m-d' );
