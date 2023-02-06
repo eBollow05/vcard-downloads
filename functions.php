@@ -91,4 +91,4 @@ function edg_vcard_dls_example() {
 add_action( 'wp_ajax_edg_vcard_dls_example', 'edg_vcard_dls_example' );
 add_action( 'wp_ajax_nopriv_edg_vcard_dls_example', 'edg_vcard_dls_example' );
 #endregion Example
-#endregion vCard download
+#endregion vCard downloads
