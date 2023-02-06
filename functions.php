@@ -2,6 +2,8 @@
 # Ignore the line above
 
 
+#region vCard downloads
+#region Example
 function edg_vcard_dls_example() {
 	$post_id = $_POST[ 'id' ];
 	$post = get_post( $post_id );
