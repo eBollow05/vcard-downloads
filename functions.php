@@ -10,7 +10,6 @@ function edg_vcard_dls_example() {
 	$base_url = $upload_dir[ 'baseurl' ];
 	$folder_path = '/vcards/example/';
 	$post_id = $_POST[ 'id' ];
-
 	$post = get_post( $post_id );
 
 	if ( ! $post ) return;
