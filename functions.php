@@ -5,14 +5,15 @@
 #region vCard downloads
 #region Example
 function edg_vcard_dls_example() {
-	$upload_dir = wp_upload_dir();
-	$base_dir = $upload_dir[ 'basedir' ];
-	$base_url = $upload_dir[ 'baseurl' ];
-	$folder_path = '/vcards/example/';
 	$post_id = $_POST[ 'id' ];
 	$post = get_post( $post_id );
 
 	if ( ! $post ) return;
+	
+	$upload_dir = wp_upload_dir();
+	$base_dir = $upload_dir[ 'basedir' ];
+	$base_url = $upload_dir[ 'baseurl' ];
+	$folder_path = '/vcards/example/';
 
 	$profile_picture = get_the_post_thumbnail_url( $post_id );
 	$first_name = get_post_meta( $post_id, 'first-name', true );
