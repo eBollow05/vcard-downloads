@@ -79,7 +79,6 @@ function edg_vcard_dls_example() {
 	$data .= 'END:VCARD';
 
 	fwrite( $file, $data );
-
 	$file_url = $base_url . $folder_path . $filename;
 	$res = [ 'fileUrl' => $file_url ];
 
