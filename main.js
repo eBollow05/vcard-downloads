@@ -6,22 +6,22 @@ document.addEventListener('click', e => {
 	const target = e.target;
 
 	// On single post
-	if (target.closest('.edg-vcard-dls-example :is(a, .elementor-icon')) {
+	if (target.closest('.edg-vcard-dls-example :is(a, .elementor-icon)')) {
 		e.preventDefault();
 	}
 
-	if (target.closest('.edg-vcard-dls-example :is(a, .elementor-icon') && !isDisabled) {
+	if (target.closest('.edg-vcard-dls-example :is(a, .elementor-icon)') && !isDisabled) {
 		isDisabled = true;
 		const postId = edgData.currPostId;
 		edgVcardDls('edg_vcard_dls_example', postId);
 	}
 
 	// On JetEngine listing item of single post
-	if (target.closest('.edg-vcard-dls-li-example :is(a, .elementor-icon')) {
+	if (target.closest('.edg-vcard-dls-li-example :is(a, .elementor-icon)')) {
 		e.preventDefault();
 	}
 
-	if (target.closest('.edg-vcard-dls-li-example :is(a, .elementor-icon') && !isDisabled) {
+	if (target.closest('.edg-vcard-dls-li-example :is(a, .elementor-icon)') && !isDisabled) {
 		isDisabled = true;
 		const postId = target.closest('.jet-listing-grid__item').dataset.postId;
 		edgVcardDls('edg_vcard_dls_example', postId);
