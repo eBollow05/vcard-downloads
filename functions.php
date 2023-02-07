@@ -55,7 +55,7 @@ function edg_vcard_dls_example() {
 	if ( ! $birthdate || ! $birthdate_res || ! $birthdate_res->format( 'Y-m-d' ) || $birthdate_res > $today ) return;
 	
 	$birthdate_res = $today->diff( $birthdate_res );
-	return $birthdate_res->format( 'Y-m-d' );
+	$birthdate_res = $birthdate_res->format( 'Y-m-d' );
 
 	$filename = $post->post_name . '.vcf';
 	$filepath = $base_dir . $folder_path . $filename;
