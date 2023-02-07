@@ -43,11 +43,11 @@ function edg_vcard_dls_example() {
 
 	$birthdate_res = false;
 	$today = new DateTime();
-	$birthdate_date= '';
+	$birthdate_date = '';
 	
 	if ( is_numeric( $birthdate ) ) {
-		$birthdate_date= date_i18n( 'Y-m-d', $birthdate );
-		$birthdate_res = date_create( $birthdate_date);
+		$birthdate_date = date_i18n( 'Y-m-d', $birthdate );
+		$birthdate_res = date_create( $birthdate_date );
 	} else {
 		$birthdate_res = date_create( $birthdate );
 	}
