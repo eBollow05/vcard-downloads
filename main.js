@@ -6,7 +6,6 @@ document.addEventListener('click', e => {
 	const target = e.target;
 
 	// On single post
-	// On single post
 	if (target.closest('.edg-vcard-dls-example :is(a, .elementor-icon')) {
 		e.preventDefault();
 	}
