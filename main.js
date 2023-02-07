@@ -43,7 +43,7 @@ function edgVcardDls(action, postId) {
 		const res = JSON.parse(xhr.responseText);
 
 		if (!res) {
-			alert('vCard konnte nicht generiert werden. Bitte lade die Seite neu und versuche es nochmal.');
+			alert('Ungültige Daten. vCard konnte nicht generiert werden.');
 			isDisabled = false;
 			return;
 		}
