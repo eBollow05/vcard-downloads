@@ -41,21 +41,21 @@ function edg_vcard_dls_example() {
 		$profile_picture = base64_encode( file_get_contents( wp_get_attachment_image_url( 1 ) ) );
 	}
 
-	$birthdate_res = date_create( $birthdate );
+	$birthdate_res = false;
 	$today = new DateTime();
-
-	if ( ! $birthdate_res ) {
-		$birthdate_uts = intval( $birthdate );
-
-		if ( ! ( $birthdate_uts > 0 ) || $birthdate_uts == false ) return;
-		$birthdate_res = date_create( "@{$birthdate_uts}" );
-	}
-
-	if ( ! $birthdate || ! $birthdate_res || $birthdate_res > $today ) {
-		$birthdate_res = '';
+	$birthdate_date= '';
+	
+	if ( is_numeric( $birthdate ) ) {
+		$birthdate_date= date_i18n( 'Y-m-d', $birthdate );
+		$birthdate_res = date_create( $birthdate_date);
 	} else {
-		$birthdate_res = $birthdate_res->format( 'Y-m-d' );
+		$birthdate_res = date_create( $birthdate );
 	}
+	
+	if ( ! $birthdate || ! $birthdate_res || ! $birthdate_res->format( 'Y-m-d' ) || $birthdate_res > $today ) return;
+	
+	$birthdate_res = $today->diff( $birthdate_res );
+	return $birthdate_res->format( 'Y-m-d' );
 
 	$filename = $post->post_name . '.vcf';
 	$filepath = $base_dir . $folder_path . $filename;
