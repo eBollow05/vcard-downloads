@@ -22,8 +22,8 @@ PHP variables which you can load into your JavaScript file with `wp_localize_scr
 
 Change following stuff in the `functions.php` snippet:
 
-- The [opening region name](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L6) and the [closing region name](hhttps://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L93) to the desired post type
-
+- The [opening region name](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L6) and the [closing region name](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L93) to the desired post type
+- 
 
 
 
