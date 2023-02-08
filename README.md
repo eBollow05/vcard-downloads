@@ -33,7 +33,7 @@ Change following stuff in the `functions.php` snippet:
 Change following stuff in the `main.js` snippet:
 
 - The query selector where the download link action should be fired ([here](https://github.com/eBollow05/vcard-downloads/blob/main/main.js#L9) and [here](https://github.com/eBollow05/vcard-downloads/blob/main/main.js#L13)). The class name ending word, in our case: `example`, to the desired post type name. For the pseudo class function `:is()`, which is used in the query selector, you can target your needed elements.
-- The [function name](https://github.com/eBollow05/vcard-downloads/blob/main/main.js#L16), in our case: `edg_vcard_dls_example`, to the one you use in the `functions.php` snippet
+- The [function parameter name](https://github.com/eBollow05/vcard-downloads/blob/main/main.js#L16), in our case: `edg_vcard_dls_example`, to the one you use in the `functions.php` snippet
 - If you don't want to display the download link on [JetEngine listing items](https://crocoblock.com/widgets/listing-grid/), remove [these lines of code](https://github.com/eBollow05/vcard-downloads/blob/main/main.js#L19-L28)
 - Repeat the process with the `JetEngine listing items` code
 
