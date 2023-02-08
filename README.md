@@ -37,10 +37,10 @@ Change following stuff in the `main.js` snippet:
 - If you don't want to display the download link on [JetEngine listing items](https://crocoblock.com/widgets/listing-grid/), remove [these lines of code](https://github.com/eBollow05/vcard-downloads/blob/main/main.js#L19-L28)
 - Repeat the process with the `JetEngine listing items` code
 
-To add the download link functionality, use:
+To add the download link functionality to your needed elements, use:
 
-- for single post page
-- for [JetEngine listing item](https://crocoblock.com/widgets/listing-grid/) of single post
+- The class name you specified [here](https://github.com/eBollow05/vcard-downloads/blob/main/main.js#L9) and [here](https://github.com/eBollow05/vcard-downloads/blob/main/main.js#L13) (for single post page)
+- The class name you specified [here](https://github.com/eBollow05/vcard-downloads/blob/main/main.js#L20) and [here](https://github.com/eBollow05/vcard-downloads/blob/main/main.js#L24) (for [JetEngine listing item](https://crocoblock.com/widgets/listing-grid/) of single post)
 
 ---
 
