@@ -33,7 +33,6 @@ function edg_vcard_dls_example() {
 	$profile_picture_path = get_home_path() . str_replace( home_url(), '', $profile_picture );
 	$ext = pathinfo( $profile_picture_path, PATHINFO_EXTENSION );
 
-	# Fallback image (remove `else` clause if you don't want to use a fallback image)
 	# ID 1: Fallback image
 	if ( file_exists( $profile_picture_path ) && ! empty( $profile_picture ) ) {
 		$profile_picture = base64_encode( file_get_contents( $profile_picture ) );
