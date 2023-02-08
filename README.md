@@ -5,9 +5,9 @@ First you need to have a custom post type with [meta fields that make sense for 
 - First and last name
 - Email address
 - Phone number
-- etc.
+- Etc.
 
-You also need PHP variables which you can load into your JavaScript file (`wp_localize_script()`), in our case we need the [AJAX URL of the site](https://github.com/eBollow05/child-theme/blob/main/functions.php#L21) and the [current post ID](https://github.com/eBollow05/child-theme/blob/main/functions.php#L22).
+You also need PHP variables which you can load into your JavaScript file with `wp_localize_script()`, in our case we need the [AJAX URL of the site](https://github.com/eBollow05/child-theme/blob/main/functions.php#L21) and the [current post ID](https://github.com/eBollow05/child-theme/blob/main/functions.php#L22).
 
 
 1. Log into your website via FTP
