@@ -24,7 +24,7 @@ Change following stuff in the `functions.php` snippet:
 
 - The region name ([begin](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L6) and [end](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L93)) to the desired post type name
 - The function name ending word, in our case: `example`, to to the desired post type name ([here](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L7) and [here](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L91-L92))
-- The word after `vcards` as you named the folder you created inside of the `vcards` folder in the [folder path](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L16)
+- The [folder path](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L16): The word after `vcards`, in our case: `example`, as you named the folder you created inside of the `vcards` folder
 
 
 
