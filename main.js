@@ -5,7 +5,7 @@ let isDisabled = false;
 document.addEventListener('click', e => {
 	const target = e.target;
 
-	// On single post
+	// On single post page
 	if (target.closest('.edg-vcard-dls-example :is(a, .elementor-icon)')) {
 		e.preventDefault();
 	}
