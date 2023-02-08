@@ -37,7 +37,7 @@ function edg_vcard_dls_example() {
 	if ( file_exists( $profile_picture_path ) && ! empty( $profile_picture ) ) {
 		$profile_picture = base64_encode( file_get_contents( $profile_picture ) );
 	} else {
-		$profile_picture = base64_encode( file_get_contents( wp_get_attachment_image_url( 9667 ) ) );
+		$profile_picture = base64_encode( file_get_contents( wp_get_attachment_image_url( 1 ) ) );
 	}
 
 	$birthdate_res = false;
