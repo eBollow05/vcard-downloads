@@ -32,8 +32,10 @@ Change following stuff in the `functions.php` snippet:
 
 Change following stuff in the `main.js` snippet:
 
-- 
+- The query selector where the download link action should be called ([here](https://github.com/eBollow05/vcard-downloads/blob/main/main.js#L9) and [here](https://github.com/eBollow05/vcard-downloads/blob/main/main.js#L13))
+- https://github.com/eBollow05/vcard-downloads/blob/main/main.js#L9
 - If you don't want to display the download link on [JetEngine listing items](https://crocoblock.com/widgets/listing-grid/), remove [these lines of code](https://github.com/eBollow05/vcard-downloads/blob/main/main.js#L19-L28)
+- Repeat the process with the `JetEngine listing items` code
 
 To add the download link functionality, use:
 
