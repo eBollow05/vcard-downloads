@@ -26,7 +26,7 @@ Change following stuff in the `functions.php` snippet:
 - The function name ending word, in our case: `example`, to to the desired post type name ([here](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L7) and [here](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L91-L92))
 - The [folder path](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L16) (the word after `vcards`, in our case: `example`, as you named the folder you created inside of the `vcards` folder)
 - The [meta fields](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L19-L29) you want to include (if you aren't using a birthdate field, remove [these lines of code](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L44-L58))
-- Remove the [else clause](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L40-L42) if you don't want to use a fallback image, or change the ID in `wp_get_attachment_image_url()` for the image you want to use as fallback
+- Removing the [else clause](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L40-L42) if you don't want to use a fallback image, or change the ID in `wp_get_attachment_image_url()` for the image you want to use as fallback
 - 
 
 
