@@ -1,5 +1,5 @@
 # vCard Downloads
-*Without any plugin or jQuery crap ;)*
+*WITHOUT ANY PLUGIN OR JQUERY CRAP ;)*
 
 First, you need to have a [child theme](https://github.com/eBollow05/child-theme) installed and activated on your site. Also, you need to have:
 
