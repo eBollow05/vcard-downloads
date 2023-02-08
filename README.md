@@ -33,7 +33,7 @@ Change following stuff in the `functions.php` snippet:
 Change following stuff in the `main.js` snippet:
 
 - 
-- If you don't want to display the download link on [JetEngine listing items](https://crocoblock.com/widgets/listing-grid/), remove [these lines of code](https://github.com/eBollow05/vcard-downloads/blob/main/main.js#L19-L28
+- If you don't want to display the download link on [JetEngine listing items](https://crocoblock.com/widgets/listing-grid/), remove [these lines of code](https://github.com/eBollow05/vcard-downloads/blob/main/main.js#L19-L28)
 
 To add the download link functionality to your page, use:
 
