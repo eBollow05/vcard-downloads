@@ -43,6 +43,6 @@ Additional info:
 
 - More info about the [vCard 3.0 format specification](https://www.evenx.com/vcard-3-0-format-specification)
 
-Instead of using the built-in [post thumbnail](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L18) as profile picture, you also could use a meta field for that. But don't forget to wrap it's value with `wp_get_attachment_image_url()` if the field saves the values as image ID instead of URL.
+Instead of using the built-in [post thumbnail](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L18) as profile picture, you also could use a meta field for that. But don't forget to put it's value in `wp_get_attachment_image_url()` if the field saves the values as image ID instead of URL.
 
 If you've setup a [.htaccess password protection](https://github.com/eBollow05/.htaccess-password-protection) for your entire site, images are not shown in the generated `.vcf` file, because the function `file_get_contents()` (which is needed in the `functions.php` snippet to render the profile picture), by default, doesn't properly.
