@@ -1,6 +1,7 @@
 # vCard Downloads
 
 First you need to have a custom post type with [meta fields that make sense for a vCard](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L19-L29), such as:
+
 - First and last name
 - Email address
 - Phone number
