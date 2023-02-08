@@ -26,4 +26,4 @@ Additional info:
 
 - More info about the [vCard 3.0 format specification](https://www.evenx.com/vcard-3-0-format-specification)
 
-If you've setup a [.htaccess password protection](https://github.com/eBollow05/.htaccess-password-protection) for your entire site, images are not shown in the `.vcf` file, because the function `file_get_contents()` (which is needed in the `functions.php` snippet to render the profile picture), by default, can't work properly.
+If you've setup a [.htaccess password protection](https://github.com/eBollow05/.htaccess-password-protection) for your entire site, images are not shown in the generated `.vcf` file, because the function `file_get_contents()` (which is needed in the `functions.php` snippet to render the profile picture), by default, can't work properly.
