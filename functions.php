@@ -44,16 +44,18 @@ function edg_vcard_dls_example() {
 	$birthdate_res = false;
 	$today = new DateTime();
 	$birthdate_date = '';
-	
+
 	if ( is_numeric( $birthdate ) ) {
 		$birthdate_date = date_i18n( 'Y-m-d', $birthdate );
 		$birthdate_res = date_create( $birthdate_date );
 	} else {
 		$birthdate_res = date_create( $birthdate );
 	}
-	
-	if ( ! $birthdate || ! $birthdate_res || ! $birthdate_res->format( 'Y-m-d' ) || $birthdate_res > $today ) return;
-	
+
+	if ( ! $birthdate || ! $birthdate_res || ! $birthdate_res->format( 'Y-m-d' ) || $birthdate_res > $today ) {
+		$birthdate_res = '';
+	};
+
 	$birthdate_res = $today->diff( $birthdate_res );
 	$birthdate_res = $birthdate_res->format( 'Y-m-d' );
 
