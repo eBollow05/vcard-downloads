@@ -1,6 +1,6 @@
 # vCard Downloads
 
-First, you need to have a [child theme](https://github.com/eBollow05/child-theme) installed and acitvated on your site. Also, you need to have:
+First, you need to have a [child theme](https://github.com/eBollow05/child-theme) installed and activated on your site. Also, you need to have:
 
 A custom post type with [meta fields that make sense for a vCard](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L19-L29), such as:
 
