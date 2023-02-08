@@ -23,7 +23,7 @@ PHP variables which you can load into your JavaScript file with `wp_localize_scr
 Change following stuff in the `functions.php` snippet:
 
 - The region name ([begin](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L6) and [end](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L93)) to the desired post type name
-- The function name ending word (in our case: `example`) to to the desired post type name (like the name of the folder you created inside of the `vcards` folder)
+- The function name ending word, in our case: `example`, to to the desired post type name (like the name of the folder you created inside of the `vcards` folder) [here](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L7) and [here](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L91-L92)
 
 
 
