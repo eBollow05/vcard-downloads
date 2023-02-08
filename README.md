@@ -20,12 +20,6 @@ PHP variables which you can load into your JavaScript file with `wp_localize_scr
 5. Paste the `style.css` snippet into the `style.css` file ([enqueue it](https://github.com/eBollow05/child-theme/blob/main/functions.php#L13-L27)) of your [child theme](https://github.com/eBollow05/child-theme)
 6. Paste the `main.js` snippet into the `main.js` file ([enqueue it](https://github.com/eBollow05/child-theme/blob/main/functions.php#L13-L27)) of your [child theme](https://github.com/eBollow05/child-theme)
 
-
-https://github.com/eBollow05/child-theme/blob/main/functions.php#L20-L28
-wir brauchen 
-ajaxUrl
-currPostId
-
 ---
 
 Additional info:
