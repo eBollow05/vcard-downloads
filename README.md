@@ -17,9 +17,20 @@ PHP variables which you can load into your JavaScript file with `wp_localize_scr
 2. Create a folder under `/wp-content/uploads/` called `vcards`
 3. Go into the created folder and create another folder called like the desired post type for which you want to use the vCard downlod feature, in our case: `example` (only ASCII lowercase letters, use hyphens instead of spaces)
 4. Paste the `functions.php` snippet into the `functions.php` file of your [child theme](https://github.com/eBollow05/child-theme)
-5. Now edit in your `functions.php` file following stuff:
-7. Paste the `style.css` snippet into the `style.css` file ([enqueue it](https://github.com/eBollow05/child-theme/blob/main/functions.php#L13-L27)) of your [child theme](https://github.com/eBollow05/child-theme)
-8. Paste the `main.js` snippet into the `main.js` file ([enqueue it](https://github.com/eBollow05/child-theme/blob/main/functions.php#L13-L27)) of your [child theme](https://github.com/eBollow05/child-theme)
+5. Paste the `style.css` snippet into the `style.css` file ([enqueue it](https://github.com/eBollow05/child-theme/blob/main/functions.php#L13-L27)) of your [child theme](https://github.com/eBollow05/child-theme)
+6. Paste the `main.js` snippet into the `main.js` file ([enqueue it](https://github.com/eBollow05/child-theme/blob/main/functions.php#L13-L27)) of your [child theme](https://github.com/eBollow05/child-theme)
+
+Change following stuff in the `functions.php` snippet:
+
+- The [opening region name](https://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L6) and the [closing region name](hhttps://github.com/eBollow05/vcard-downloads/blob/main/functions.php#L93) to the desired post type
+
+
+
+
+
+Change following stuff in the `main.js` snippet:
+
+- 
 
 To add the download link functionality to your page, use:
 
