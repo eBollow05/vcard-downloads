@@ -37,7 +37,7 @@ function edg_vcard_dls_example() {
 	if ( file_exists( $profile_picture_path ) && ! empty( $profile_picture ) ) {
 		$profile_picture = base64_encode( file_get_contents( $profile_picture ) );
 	} else {
-		$profile_picture = base64_encode( file_get_contents( wp_get_attachment_image_url( 1 ) ) );
+		$profile_picture = base64_encode( file_get_contents( wp_get_attachment_image_url( 9667 ) ) );
 	}
 
 	$birthdate_res = false;
@@ -53,10 +53,9 @@ function edg_vcard_dls_example() {
 
 	if ( ! $birthdate || ! $birthdate_res || ! $birthdate_res->format( 'Y-m-d' ) || $birthdate_res > $today ) {
 		$birthdate_res = '';
-	};
-
-	$birthdate_res = $today->diff( $birthdate_res );
-	$birthdate_res = $birthdate_res->format( 'Y-m-d' );
+	} else {
+		$birthdate_res = $birthdate_res->format( 'Y-m-d' );
+	}
 
 	$filename = $post->post_name . '.vcf';
 	$filepath = $base_dir . $folder_path . $filename;
