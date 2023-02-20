@@ -85,7 +85,7 @@ function edg_vcard_dls_example() {
 
 	$file_url = $base_url . $folder_path . $filename;
 	$res = [ 'fileUrl' => $file_url ];
-	echo json_encode( $res );
+	echo wp_json_encode( $res );
 	exit;
 }
 add_action( 'wp_ajax_edg_vcard_dls_example', 'edg_vcard_dls_example' );
