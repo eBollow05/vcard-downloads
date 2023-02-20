@@ -82,9 +82,9 @@ function edg_vcard_dls_example() {
 
 	fwrite( $file, $data );
 	fclose( $file );
-
 	$file_url = $base_url . $folder_path . $filename;
 	$res = [ 'fileUrl' => $file_url ];
+
 	echo wp_json_encode( $res );
 	exit;
 }
