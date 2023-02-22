@@ -1,3 +1,5 @@
+/* #region Buttons and links */
 a:not([href]) {
 	cursor: pointer;
 }
+/* #endregion Buttons and links */
