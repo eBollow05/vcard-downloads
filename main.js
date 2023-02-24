@@ -3,6 +3,7 @@ let isDisabled = false;
 
 // #region Click events
 document.addEventListener('click', e => {
+	if (elementorFrontend.isEditMode()) return;
 	const target = e.target;
 
 	// On single post page
