@@ -61,7 +61,7 @@ function edg_vcard_dls_example() {
 	$filepath = $base_dir . $folder_path . $filename;
 	$file = fopen( $filepath, 'w' );
 
-	header( 'Content-Type: text/x-vcard; charset=utf-8' );
+	header( 'Content-Type: text/x-vcard;charset=utf-8' );
 	header( 'Content-Disposition: attachment; filename=' . $filename );
 
 	$data = 'BEGIN:VCARD' . "\n";
