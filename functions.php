@@ -15,7 +15,7 @@ function edg_vcard_dls_example() {
 	$base_url = $upload_dir[ 'baseurl' ];
 	$folder_path = '/vcards/example/';
 
-	$profile_picture = get_the_post_thumbnail_url( $post_id );
+	$profile_picture = get_the_post_thumbnail_url( $post_id, 'full' );
 	$first_name = get_post_meta( $post_id, 'first-name', true );
 	$last_name = get_post_meta( $post_id, 'last-name', true );
 	$title = get_post_meta( $post_id, 'position', true );
@@ -37,7 +37,7 @@ function edg_vcard_dls_example() {
 	if ( file_exists( $profile_picture_path ) && ! empty( $profile_picture ) ) {
 		$profile_picture = base64_encode( file_get_contents( $profile_picture ) );
 	} else {
-		$profile_picture = base64_encode( file_get_contents( wp_get_attachment_image_url( 1 ) ) );
+		$profile_picture = base64_encode( file_get_contents( wp_get_attachment_image_url( 1, 'full' ) ) );
 	}
 
 	$birthdate_res = false;
